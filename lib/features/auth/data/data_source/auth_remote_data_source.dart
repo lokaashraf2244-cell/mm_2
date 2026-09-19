@@ -1,4 +1,4 @@
-import '/core/errors/failure.dart';
+import '/core/errors/faliure.dart';
 abstract class AuthDataSource {
 
   Future<Either<Failure, Map<String, dynamic>>> login({
