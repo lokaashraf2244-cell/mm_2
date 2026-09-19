@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mm/core/widget/customsocialbutton.dart';
-import 'package:mm/core/widget/custom_text_filed_widget.dart';
+import 'package:mm_2/features/auth/presentation/widgets/customsocialbutton.dart';
+import 'package:mm_2/features/auth/presentation/widgets/custom_text_filed_widget.dart';
 import 'signupscreen.dart';
-import 'package:mm/core/cubit/theme/theme_cubit.dart';
-import 'package:mm/core/cubit/theme/theme_state.dart';
+import 'package:mm_2/core/cubit/theme/theme_cubit.dart';
+import 'package:mm_2/core/cubit/theme/theme_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'productscreen.dart';
 
@@ -148,18 +148,6 @@ class _loginscreenState extends State<loginscreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-
-                          Text(
-                            'Name',
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
-                              color: Theme
-                                  .of(context)
-                                  .dividerColor,
-                            ),
-                          ),
-
                           const SizedBox(height: 8),
                           CustomTextField(
                             controller: namecontroller,
@@ -287,27 +275,7 @@ class _loginscreenState extends State<loginscreen> {
                       ),
                     ),
                     const SizedBox(height: 15),
-                    SizedBox(
-                      width: double.infinity,
-                      height: 50,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const ProductsScreen(),
-                            ),
-                          );
-                        },
-                        child: const Text(
-                          'Products',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

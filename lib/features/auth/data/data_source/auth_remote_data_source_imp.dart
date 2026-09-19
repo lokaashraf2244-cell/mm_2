@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:mm_2/core/errors/failure.dart';
-import 'package:mm/core/network/api/api_consumer.dart';
-import 'package:mm/data/data_source/abstract/auth_datasource.dart';
+import 'package:mm_2/core/network/api_constants.dart';
+import 'package:mm_2/features/auth/data/data_source/auth_remote_data_source.dart';
 
 class AuthDataSourceImpl implements AuthDataSource {
 

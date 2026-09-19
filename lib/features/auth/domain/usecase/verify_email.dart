@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
 
-import '/core/errors/failures.dart';
-import '../repositories/auth_repository.dart';
-import '../../data/models/verify_email_request.dart';
+import 'package:mm_2/core/errors/failure.dart';
+import 'package:mm_2/features/domain/reposatories/auth_repo.dart';
+import 'package:mm_2/features/auth/data/models/verify_req.dart';
 
 class VerifyEmail {
   final AuthRepository repository;

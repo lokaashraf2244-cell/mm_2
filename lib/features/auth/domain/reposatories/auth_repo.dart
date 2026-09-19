@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
 
-import '/core/errors/failures.dart';
+import 'package:mm_2/core/errors/failure.dart';
 
-import '../../data/models/login_request.dart';
-import '../../data/models/register_request.dart';
-import '../../data/models/verify_email_request.dart';
-import '../../data/models/resend_otp_request.dart';
+import 'package:mm_2/features/auth/data/models/login_req.dart';
+import 'package:mm_2/features/auth/data/models/signup_req.dart';
+import 'package:mm_2/features/auth/data/models/verify_req.dart';
+import 'package:mm_2/features/auth/data/models/resend.dart';
 
 abstract class AuthRepository {
   Future<Either<Failure, dynamic>> login(

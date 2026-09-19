@@ -1,8 +1,7 @@
 import 'package:dartz/dartz.dart';
-
-import '/core/errors/failures.dart';
+import 'package:mm_2/core/errors/failure.dart';
 import '../repositories/auth_repository.dart';
-import '../../data/models/resend_otp_request.dart';
+import 'package:mm_2/features/auth/data/models/resend.dart';
 
 class ResendOtp {
   final AuthRepository repository;

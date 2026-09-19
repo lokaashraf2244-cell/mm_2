@@ -1,20 +1,25 @@
-import '/core/errors/faliure.dart';
-abstract class AuthDataSource {
+import 'package:dartz/dartz.dart';
 
-  Future<Either<Failure, Map<String, dynamic>>> login({
-    required String email,
-    required String password,
-  });
+import '/core/errors/failure.dart';
+import '../models/login_req.dart';
+import '../models/signup_req.dart';
+import '../models/verify_req.dart';
+import '../models/resend.dart';
 
+abstract class AuthRemoteDataSource {
+  Future<Either<Failure, dynamic>> login(
+      LoginRequest request,
+      );
 
-  Future<Either<Failure, Map<String, dynamic>>> signUp({
-    required String firstName,
-    required String lastName,
-    required String email,
-    required String password,
-  });
-  Future<Either<Failure, Map<String, dynamic>>> verify({
-    required String email,
-    required String code,
-  });
+  Future<Either<Failure, dynamic>> register(
+      SignupRequest request,
+      );
+
+  Future<Either<Failure, dynamic>> verifyEmail(
+      VerifyEmailRequest request,
+      );
+
+  Future<Either<Failure, dynamic>> resendOtp(
+      ResendOtpRequest request,
+      );
 }

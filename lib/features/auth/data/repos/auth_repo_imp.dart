@@ -2,11 +2,11 @@ import 'package:dartz/dartz.dart';
 
 import '/core/errors/failure.dart';
 
-import '../datasources/auth_remote_data_source.dart';
-import '../models/login_request.dart';
-import '../models/register_request.dart';
-import '../models/verify_email_request.dart';
-import '../models/resend_otp_request.dart';
+import 'package:mm_2/features/auth/data/data_source/auth_remote_data_source.dart';
+import 'package:mm_2/features/auth/data/models/login_req.dart';
+import 'package:mm_2/features/auth/data/models/signup_req.dart';
+import 'package:mm_2/features/auth/data/models/verify_req.dart';
+import 'package:mm_2/features/auth/data/models/resend.dart';
 import '../../domain/repositories/auth_repository.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
@@ -22,10 +22,9 @@ class AuthRepositoryImpl implements AuthRepository {
       ) async {
     return await remoteDataSource.login(request);
   }
-
   @override
-  Future<Either<Failure, dynamic>> signup(
-     signupRequest request,
+  Future<Either<Failure, dynamic>> register(
+      SignupRequest request,
       ) async {
     return await remoteDataSource.register(request);
   }

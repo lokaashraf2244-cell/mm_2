@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pinput/pinput.dart';
-
-import 'package:mm/core/cubit/theme/theme_cubit.dart';
-import 'package:mm/core/cubit/theme/theme_state.dart';
+import 'package:mm_2/core/cubit/theme/theme_cubit.dart';
+import 'package:mm_2/core/cubit/theme/theme_state.dart';
 
 class VerificationPage extends StatefulWidget {
   const VerificationPage({super.key});
@@ -56,19 +55,18 @@ class _VerificationPageState extends State<VerificationPage> {
 
                   const SizedBox(height: 10),
 
-                  // ================= Image =================
                   SizedBox(
                     height: 180,
                     width: 180,
                     child: Image.asset(
-                      'assets/images/verification.png',
+                      'Assets2/images/WhatsApp.jpeg',
                       fit: BoxFit.contain,
                     ),
                   ),
 
                   const SizedBox(height: 25),
 
-                  // ================= Title =================
+
                   Text(
                     'Verification',
                     style: TextStyle(
@@ -80,7 +78,7 @@ class _VerificationPageState extends State<VerificationPage> {
 
                   const SizedBox(height: 12),
 
-                  // ================= Description =================
+
                   Text(
                     'Enter the verification code sent to your email',
                     textAlign: TextAlign.center,
@@ -92,7 +90,6 @@ class _VerificationPageState extends State<VerificationPage> {
 
                   const SizedBox(height: 30),
 
-                  // ================= OTP =================
                   Pinput(
                     controller: pinController,
                     length: 6,
@@ -146,10 +143,10 @@ class _VerificationPageState extends State<VerificationPage> {
 
                   const SizedBox(height: 15),
 
-                  // ================= Resend =================
+
                   TextButton(
                     onPressed: () {
-                      // Resend OTP later
+
                     },
                     child: const Text(
                       'Resend Code',

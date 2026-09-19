@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mm/core/widget/custom_text_filed_widget.dart';
+import 'package:mm_2/features/auth/presentation/widgets/custom_text_filed_widget.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mm/core/cubit/theme/theme_cubit.dart';
+import 'package:mm_2/core/cubit/theme/theme_cubit.dart';
 import 'loginscreen.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -33,7 +33,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 width: double.infinity,
                 height: 240,
                 child: Image.asset(
-                  'Assets/images/WhatsApp.jpeg',
+                  'Assets2/images/WhatsApp.jpeg',
                   fit: BoxFit.cover,
                 ),
               ),

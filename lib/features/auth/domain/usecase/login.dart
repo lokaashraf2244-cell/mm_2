@@ -1,9 +1,8 @@
 import 'package:dartz/dartz.dart';
 
-import '/core/errors/failures.dart';
-import '../repositories/auth_repository.dart';
-import '../../data/models/login_request.dart';
-
+import 'package:mm_2/core/errors/failure.dart';
+import 'package:mm_2/features/auth/domain/repositories/auth_repo.dart';
+import 'package:mm_2/features/auth/data/models/login_req.dart';
 class Login {
   final AuthRepository repository;
 
