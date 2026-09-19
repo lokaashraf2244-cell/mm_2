@@ -1,16 +1,16 @@
-class LoginRequest {
+class VerifyEmailRequest {
   final String email;
-  final String password;
+  final String otp;
 
-  LoginRequest({
+  VerifyEmailRequest({
     required this.email,
-    required this.password,
+    required this.otp,
   });
 
   Map<String, dynamic> toJson() {
     return {
       'email': email,
-      'password': password,
+      'otp': otp,
     };
   }
 }

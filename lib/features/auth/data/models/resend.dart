@@ -1,16 +1,13 @@
-class LoginRequest {
+class ResendOtpRequest {
   final String email;
-  final String password;
 
-  LoginRequest({
+  ResendOtpRequest({
     required this.email,
-    required this.password,
   });
 
   Map<String, dynamic> toJson() {
     return {
       'email': email,
-      'password': password,
     };
   }
 }
