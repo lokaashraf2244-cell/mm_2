@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 
-import '/core/errors/failure.dart';
+import '../core/errors/failure.dart';
 import '../models/login_req.dart';
 import '../models/signup_req.dart';
 import '../models/verify_req.dart';
