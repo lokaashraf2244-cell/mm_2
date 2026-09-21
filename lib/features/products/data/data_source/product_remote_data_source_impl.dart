@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:mm_2/core/errors/faliure.dart';
+import 'package:mm_2/core/errors/failure.dart';
 import 'product_remote_data_source.dart';
 import '/core/network/api_consumer.dart';
 class ProductDataSourceImpl implements ProductDataSource {

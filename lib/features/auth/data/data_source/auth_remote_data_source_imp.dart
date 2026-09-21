@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:mm_2/core/errors/faliure.dart';
+import 'package:mm_2/core/errors/failure.dart';
 import 'package:mm_2/core/network/api_constants.dart';
 import 'package:mm_2/core/network/api_consumer.dart';
 import 'package:mm_2/features/auth/data/data_source/auth_remote_data_source.dart';

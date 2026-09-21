@@ -1,6 +1,5 @@
 import 'package:dartz/dartz.dart';
-
-import 'package:mm_2/core/errors/faliure.dart';
+import 'package:mm_2/core/errors/failure.dart';
 import '../repositories/product_repository.dart';
 
 class GetProductDetails {

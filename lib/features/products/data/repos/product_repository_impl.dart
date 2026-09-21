@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 
-import 'package:mm_2/core/errors/faliure.dart';
+import 'package:mm_2/core/errors/failure.dart';
 import '../../data/data_source/product_remote_data_source.dart';
 import 'package:mm_2/features/products/domain/repositories/product_repository.dart';
 
